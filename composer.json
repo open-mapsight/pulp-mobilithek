@@ -1,0 +1,49 @@
+{
+    "name": "mapsight/pulp-mobilithek",
+    "description": "Mobilithek subscription source helper for Pulp pipelines.",
+    "type": "library",
+    "keywords": [
+        "mapsight",
+        "pulp",
+        "mobilithek"
+    ],
+    "homepage": "https://github.com/open-mapsight/mapsight-pulp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Golmann",
+            "email": "mail@pje-web.de",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/open-mapsight/mapsight-pulp/issues",
+        "source": "https://github.com/open-mapsight/mapsight-pulp/tree/main/packages/pulp-mobilithek"
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "mapsight/pulp": "*"
+    },
+    "suggest": {
+        "mapsight/pulp-cache": "Cache Mobilithek subscription responses"
+    },
+    "autoload": {
+        "classmap": [
+            "PulpMobilithek.php"
+        ],
+        "psr-4": {
+            "OpenMapsight\\pulpmobilithek\\": "src"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "*",
+            ".*",
+            "!/src/*",
+            "!/PulpMobilithek.php",
+            "!/README.md",
+            "!/CHANGELOG.md"
+        ]
+    }
+}
